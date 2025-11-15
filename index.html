@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saanvi's Sphere</title>
+    <title>Saanvi's Sphere</title>
+    <link rel="icon" href="Favicon.png" type="image/png" >
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+ <style>
+        html {
+            scroll-padding-top: 120px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #000, #1a1a1a);
+            font-family: Poppins, sans-serif;
+            color: #f1f1f1;
+        }
+
+        nav {
+            position: fixed;
+            background-color: #000;
+            color: #ffd700;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            padding: 12px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        nav p {
+            font-size: larger;
+            color: #ffd700;
+        }
+
+        nav a {
+            text-decoration: none;
+            color:white;
+            font-size: medium;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        nav a::after {
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #ffd700;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .links {
+            gap: 30px;
+        display: flex;
+        }
+
+        .intro {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+            padding: 140px 70px;
+            height: 100vh;
+        flex-wrap: wrap;
+        }
+
+        .intro img {
+            width: 260px;
+            height: 300px;
+            border-radius: 50%;
+            border: 4px solid #ffd700;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+            transition: 0.4s ease;
+        }
+
+        .intro img:hover {
+            transform: scale(1.05);
+        }
+
+        .intro-text h1 {
+            font-size: 40px;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        .intro-text p {
+            line-height: 1.6;
+            font-size: 18px;
+            color: white;
+        }
+
+        .quote {
+            margin-top: 40px;
+            width: 75%;
+            font-size: 1.15em;
+            background: rgba(30, 30, 30, 0.7);
+            padding: 15px 20px;
+            border-left: 5px solid #ffd700;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+
+        .About,
+        .Education,
+        .Skills,
+        .Project {
+            border-left: 5px solid #ffd700;
+            background-color: rgba(20, 20, 20, 0.85);
+            padding: 40px;
+            margin: 100px auto;
+            width: 70%;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+        }
+
+        section h2 {
+            color: #ffd700;
+        }
+
+        ul {
+            list-style-type: "💻 ";
+            padding-left: 10px;
+        }
+
+        .Project div:hover {
+            background: rgba(255, 215, 0, 0.05);
+        }
+
+        .Contact {
+            border-left: 5px solid #ffd700;
+            background-color: rgba(20, 20, 20, 0.9);
+            padding: 40px;
+            margin: 100px auto;
+            width: 70%;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .Contact h2 {
+            text-align: center;
+            color: #ffd700;
+            font-size: 28px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .Contact ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .Contact li {
+            background: rgba(30, 30, 30, 0.9);
+            padding: 12px 18px;
+            margin-bottom: 12px;
+            border-radius: 10px;
+            font-size: 17px;
+            color: #ffd700;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.3s ease;
+        }
+
+        .Contact li:hover {
+            background: rgba(255, 215, 0, 0.1);
+            transform: translateX(5px);
+        }
+
+        .Contact a {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+
+        .Contact a:hover {
+            color: #ffd700;
+        }
+
+        
+</style>
+</head>
+<body>
+    <nav> 
+        <p>Saanvi</p>
+        <div class="links">
+            <a href="#Home">Home Page</a>
+            <a href="#About">About Me</a>
+            <a href="#Education&Skills">Education & Skills</a>
+            <a href="#Project">Projects</a>
+            <a href="#Contact">Contact Info</a>
+        </div>
+    </nav>
+
+    <section id="Home" class="intro">
+        <img src="My photo.png" alt="Saanvi's Photo">
+        <div class="intro-text">
+            <h1>Hi, I'm Saanvi</h1>
+            <p>
+                I'm a student at Delhi Technological University (DTU), passionate about web development,
+                design, and technology. I am currently learing HTML and CSS.
+                I’m still exploring, still improving, and enjoying every part of the process.
+            </p>
+        </div>
+        <div class="quote">
+        <p>Welcome to my personal space — a collection of everything I’m learning, building, and dreaming of as a first-year engineering student exploring the web world. Here, you’ll find my journey through coding, creativity, and curiosity.
+            <strong>Want to know more?</strong>
+            Click the links at the top to explore my Education, Projects, Skills, and Contact Info — and get to know me beyond the homepage</p>
+        </div>
+    </section>
+    <section id="About" class="About">
+        <div class="Me">
+            <h2>Who am I?</h2>
+            <p>I’m Saanvi, a first-year engineering student at Delhi Technological University (DTU). I’m passionate about web development, design, and exploring how creativity and technology come together to build beautiful things.
+                I love learning new skills, experimenting with code, and seeing my ideas come alive on the screen.</p>
+            </div>      
+
+        <div class="interests">
+            <h2>My Interests</h2>
+            <p>I have a strong interest in coding, as it allows me to combine creativity with analytical thinking. I enjoy developing web pages and exploring how small design and logic changes can make a big difference in user experience.
+
+            Outside of academics, I enjoy reading and listening to music, both of which help me stay inspired and balanced. Reading broadens my perspective and encourages critical thinking, while music helps me focus and unwind after a busy day.</p>
+            </div>
+        
+
+        <div class="goal">
+            <h2>My Goals</h2>
+            <ul>
+                <li >Improve my understanding and skills in HTML and CSS to create cleaner, more responsive designs</li>
+                <li>Learn C programming to strengthen my problem-solving and logical thinking</li>
+                <li>Learn Git and GitHub for proper version control and collaboration.</li>
+                <li>Develop better time management and organization skills.</li>
+                <li>Participate in hackathons or coding events to gain real-world experience.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="Education&Skills">
+        <section class="Education">
+            <h2>Education</h2>
+            <p><strong>Delhi Technological University</strong></p>
+            <p>Bachelor of Technology (B.Tech), Computer Science Engineering</p>
+            <ul>
+                <li>Currently pursuing my undergraduate degree and exploring the world of programming and web development.</li>
+                <li>Learning the fundamentals of coding, design, and software development.</li>
+            </ul>
+            <p><strong>St.Angel's Senior Secondary School</strong></p>
+            <p>Graduated in May,2025</p>
+            <ul>
+                <li>Scored 91.7 % in 12th CBSE Board</li>
+                <li>Scored 96.4 % in 10th CBSE Board</li>
+            </ul>
+        </section>
+        <section class="Skills">
+            <h2>Skills</h2>
+            <p><strong>Technical Skills</strong></p>
+            <ul>
+                <li>Languages: HTML, CSS, Python,C</li>
+                <li>Tools: VS Code, GitHub, Canva</li>
+                <li>Areas of Interest: Web design, Machine Learning</li>
+
+            </ul>
+            <p><strong>Soft Skills</strong></p>
+            <ul>
+                <li>Creativity & problem-solving</li>
+                <li>Communication</li>
+                <li>Teamwork</li>
+            </ul>
+        </section>
+    </section>
+    <section class="Project" id="Project">
+        <p>Here are some of the projects I’ve worked on while learning web development, HTML, and CSS. I enjoy turning ideas into interactive webpages and experimenting with design</p>
+        <div >
+            <h2>Personal Website</h2>
+            <ol>
+                <li>Description: A website showcasing my skills, projects, and contact info.</li>
+                <li>Technologies: HTML, CSS</li>
+                <li>Highlights: Clean layout, responsive design, minimalistic aesthetic.</li>
+        
+            </ol>
+        </div>
+        <div>
+            <h2>Basic Form</h2>
+            <ol>
+                <li>Description:A simple front-end website to take input from user</li>
+                <li>Technologies:HTML,CSS</li>
+                <li>Highlights: Clean layout,Different input types</li>
+                
+            </ol>
+        </div>
+    </section>
+    <section class="Contact" id="Contact">
+        <h2>Contact Information</h2>
+        <ul>
+            <li>Name-Saanvi Singh</li>
+            <li>Phone number: <a href="tel:9811885847">9811885847</a></li>
+            <li>Email: <a href="mailto:saanvisingh_cse_25a05033@dtu.ac.in">saanvisingh_cse_25a05033@dtu.ac.in</a></li>
+            <li>Linkedin-<a href="https://www.linkedin.com/in/saanvi-singh-3614b635a/">Click here</a></li>
+            <li>Github Link-<a href="https://github.com/Saanvi-Singh06">Click here</a></li>
+        </ul>
+    </section>
+
+</body>
+</html>
